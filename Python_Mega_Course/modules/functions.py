@@ -2,7 +2,7 @@ FILEPATH = './todos.txt'
 
 def get_todos(filepath=FILEPATH):
   """Return the todos from a file."""
-  with open(filepath, 'r') as f:
+  with open(filepath, 'a+') as f:
     tasks = f.readlines()
   return tasks
 
